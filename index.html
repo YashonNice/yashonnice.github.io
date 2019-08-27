@@ -11,7 +11,10 @@
 	</body>
 	<script>
 		var title = document.getElementById("title");
-		title.innerText = "正在跳转中...\r\n" + returnCitySN['cip'] + " - " + returnCitySN['cname'];
+		
+		if(returnCitySN){
+			title.innerText = "正在跳转中...\r\n" + returnCitySN['cip'] + " - " + returnCitySN['cname'];
+		}
 		
 		setTimeout(function(){
 			location.href = 'https://106.13.30.192/li/lc.html';
