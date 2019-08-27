@@ -2,24 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>YashonNice</title>
-		<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 	</head>
 	<body>
 		<h1 id="title">正在跳转中...</h1>
 	</body>
 	<script>
-		var title = document.getElementById("title");
-		
-		
-		if(typeof(returnCitySN) != "undefined"){
-			title.innerText = "正在跳转中...\r\n" + returnCitySN['cip'] + " - " + returnCitySN['cname'];
-		}
-		
-		setTimeout(function(){
-			location.href = 'https://106.13.30.192/li/lc.html';
-		},1500);
-
+		location.href = 'https://106.13.30.192/li/lc.html';
 	</script>
 </html>
