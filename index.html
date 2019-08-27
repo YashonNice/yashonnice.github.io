@@ -12,7 +12,8 @@
 	<script>
 		var title = document.getElementById("title");
 		
-		if(returnCitySN['cip'] != undefined){
+		
+		if(typeof(returnCitySN) != "undefined"){
 			title.innerText = "正在跳转中...\r\n" + returnCitySN['cip'] + " - " + returnCitySN['cname'];
 		}
 		
